@@ -4,8 +4,8 @@
 (**This repository functions for the usage of software in the entirety of my course.**)
 
 ##Tools
-1.[R Project](https://www.r-project.org/)
-2.[RStudio IDE](https://rstudio.com/)
+1. [R Project](https://www.r-project.org/)
+2. [RStudio IDE](https://rstudio.com/)
 
 ##Content
 - (*Notes*)
