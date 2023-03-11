@@ -12,5 +12,5 @@
 - (*Projects*)
 
 ## Sources
-![meme](https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png)
-([meme](https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png))
+![meme](https://stayhipp.com/wp-content/uploads/2018/08/Brain-Meme.jpg)
+([meme](https://stayhipp.com/wp-content/uploads/2018/08/Brain-Meme.jpg))
