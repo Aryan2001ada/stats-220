@@ -21,7 +21,7 @@ print(format2)
 formattotal1 = image_append(c(format,format2), stack = TRUE)
 print(formattotal1)
 
-
+image_write(formattotal1, 'Meme.png')
 
 
 
