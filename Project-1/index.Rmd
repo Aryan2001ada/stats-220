@@ -1,0 +1,86 @@
+---
+title: "Creating images with R"
+subtitle: "with a little bit of magick"
+author: "Aryan Naidu"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
+library(magick)
+```
+
+## My Meme
+
+The goal of this meme is to poke fun at the drawbacks and benefits of using R or Python for data science using a simple 'mind-expanding' phenomena to display the characteristics of the 2 languages.
+
+![](https://github.com/Aryan2001ada/stats-220/blob/main/Project-1/images/Meme.png?raw=true)
+
+```{r file='meme.R', eval=FALSE}
+
+#Step 1: to add first comparison meme
+
+meme  <- image_read('https://mat3e.github.io/brains/img/3.jpg')
+def <- image_blank(width = 700, height = 305, color = 'white')
+aes <- image_annotate(def,"This is your brain on Python", size = 40, color = 'black', location = '+15-5') 
+format = image_append(c(meme,aes))
+print(format)
+
+#Step 2: To add comparison meme 2:
+
+meme2 <- image_read('https://mat3e.github.io/brains/img/5.jpg')
+def2 <- image_blank(width = 700, height = 305, color = 'white')
+aes2 <- image_annotate(def2,'This is your brain on R', size = 40, color = 'black', location = '+180-5')
+format2 <- image_append(c(meme2,aes2))
+print(format2)
+
+#Step 3: Combining the blanks and meme toghether and then stacking to form the meme.
+
+formattotal1 = image_append(c(format,format2), stack = TRUE)
+print(formattotal1)
+
+image_write(formattotal1, 'Meme.png')
+
+
+
+
+
+
+```
+
+## My animated GIF
+
+The goal of the GIF is to show how unpredictable and emotional basketball can be, and it features two individuals who are visibly worried after a shot attempt ends in a missed basket.
+
+```{css}
+p {
+  font-size: 24px;}
+body {background-color: #ffe5b4;}
+```
+
+![](https://github.com/Aryan2001ada/stats-220/blob/main/Project-1/images/my_animation.gif?raw=true)
+
+```{r file='animation.R', eval=FALSE}
+library(magick)
+
+#In addition to the necessary frames for animation
+
+frame1 <- image_read('https://www.usab.com/-/media/3d57012cc2434a119f2cf55118b92343.jpg?h=600&iar=0&w=800&hash=34074B897BF6526387B8CE5D0D7778EC')
+frame2 <- image_read('https://media.istockphoto.com/id/173927821/photo/stressed-businessman-with-wide-eyes-looking-frightened.jpg?s=612x612&w=0&k=20&c=WyfColxxlOYqiOpdb5TBC2C3oz7Ix8T5CJvTE0pxLmc=')
+frame3 <- image_read('https://i.pinimg.com/474x/32/51/4c/32514cbbdaa2e28a3b936e555c1cc782--funny-baby-faces-funny-babies.jpg')
+frame4 <- image_read('https://thumbs.dreamstime.com/b/basketball-action-missing-point-44279359.jpg')
+frames <- c(frame1,frame2,frame3,frame4)
+animation <- image_animate(frames, fps = 1)
+gif= image_write(animation, 'my_animation.gif')
+
+#File is now converted as 'my_animation.gif'
+
+#image_read('my_animation.gif')
+
+
+#Delete the '#' in line-15 to view animation in R-Studio else open using photo editor.
+
+```
+
+
