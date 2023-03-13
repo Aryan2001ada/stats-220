@@ -11,6 +11,4 @@
 - (*Notes*)
 - (*Projects*)
 
-## Sources
-![meme](https://stayhipp.com/wp-content/uploads/2018/08/Brain-Meme.jpg)
-([meme](https://stayhipp.com/wp-content/uploads/2018/08/Brain-Meme.jpg))
+
