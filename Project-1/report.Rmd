@@ -1,0 +1,40 @@
+---
+title: "report.Rmd"
+author: "Aryan Naidu"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Project requirements
+
+My requirements:
+
+The goal of my assignment was to demonstrate how I met the requirements of the project, as well as reflect on my learning experiences. I was also responsible for creating a repository and a operating github as a code-base, with these details (included in the report), I have learnt how to use R to build a website, and how I can add a repository on GitHub and use it to further build many projects in the field of data analysis, or presentation.
+
+Through this project, I learned how to work with various platforms, including R and Git. I also gained valuable lessons about creating a repository and a website, as well as how to customize the site's appearance.
+
+
+([Link to my repo](https://github.com/Aryan2001ada/stats-220.git))
+([Link to my website:](https://aryan2001ada.github.io/stats-220/))
+
+![Screenshot of folder Project-1](https://github.com/Aryan2001ada/stats-220/blob/main/Project-1/misc/screenshot.jpg?raw=true)
+
+The way creativity is mentioned here is in fact the tools which are provided to create any combination of details towards building this website.
+
+This website has my custom-built meme, a custom-built GIF which is classically befitting the definition of creativity.
+
+I personally used the hex color '#ffe5b4' to provide for a nice calm peach background color rather than the striking, white.
+
+
+
+## Learning reflection
+
+That Github is a powerful tool, as a code-base is a powerful tool in terms of sharing code-base. I can see the ability it has to be used by many different programmers around the world to distribute information as elegantly as Github.com .
+
+I have gained a deeper understanding of various data technologies through this project, and I'm eager to see how they can be utilized in the field of data analysis and presentation, and how they may be of use in collaboration with developers all around the world.
+
+I further would also look to learn in ways to use this in my research later down the line in this field.
